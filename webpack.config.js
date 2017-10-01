@@ -8,7 +8,9 @@ const config = {
     output: {
         // This has to an absolute path
         path: path.resolve(__dirname, "build"),
-        filename: "bundle.js"
+        filename: "bundle.js",
+        // url-loader reads this property... :(
+        publicPath: "build/"
     },
     // i.e. loader (webpack 1)/module rules (webpack 2)
     module: {
@@ -26,6 +28,16 @@ const config = {
                     loader: "css-loader"
                 }),
                 test: /\.css$/
+            },
+            {
+                use: [
+                    {
+                        loader: "url-loader",
+                        options: { limit: 40000 }
+                    },
+                    "image-webpack-loader"
+                ],
+                test: /\.(jpe?g|png|gif|svg)$/
             }
         ]
     },
