@@ -1,0 +1,22 @@
+{
+  "name": "learning-webpack-app1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasatwal/Learning-Webpack-App1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jasatwal/Learning-Webpack-App1/issues"
+  },
+  "homepage": "https://github.com/jasatwal/Learning-Webpack-App1#readme",
+  "devDependencies": {
+    "webpack": "^2.2.0"
+  }
+}
