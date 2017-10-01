@@ -8,6 +8,15 @@ const config = {
         // This has to an absolute path
         path: path.resolve(__dirname, "build"),
         filename: "bundle.js"
+    },
+    // i.e. loader (webpack 1)/module rules (webpack 2)
+    module: {
+        rules: [
+            {
+                use: "babel-loader",
+                test: /\.js$/
+            }
+        ]
     }
 };
 
