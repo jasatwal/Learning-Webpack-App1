@@ -42,6 +42,7 @@ const config = {
         ]
     },
     plugins: [
+        // Does the heavy-lifting of extracting text
         new ExtractTextPlugin("style.css")
     ]
 };
